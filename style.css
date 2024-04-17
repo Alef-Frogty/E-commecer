@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 50px;
+}
+
+.navTop {
+    display: flex;
+}

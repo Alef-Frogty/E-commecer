@@ -56,5 +56,73 @@ nav {
     background-image: url("https://images.tcdn.com.br/img/img_prod/486371/papel_de_parede_vinilico_colecao_neonature_5_tijolo_cidades_cinza_escuro_10745_1_20191103175259.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);*/
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+}
+
+.sliderItem {
+    width: 100VW;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sliderBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sliderImg {
+    z-index: 1;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff ;
+    z-index: 1;
+}
+
+.sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff ;
+    border: 1px solid #808080;
+    z-index: 1;
+}
+
+.buyButton {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff ;
+        border: 1px solid #808080;
+        background-color: #111;
+        z-index: 1;
+        cursor: pointer;
+}
+
+.buyButton:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: #369e62;
 }

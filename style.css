@@ -12,4 +12,49 @@ nav {
 
 .navTop {
     display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #808080;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder {
+    color: #d3d3d3;
+}
+
+.limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px solid #008000;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: #808080;
+    font-weight: 800;
+}
+
+.slider {
+    background-image: url("https://images.tcdn.com.br/img/img_prod/486371/papel_de_parede_vinilico_colecao_neonature_5_tijolo_cidades_cinza_escuro_10745_1_20191103175259.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }

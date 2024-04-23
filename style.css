@@ -1,128 +1,361 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
-    background-color: #111;
-    color: #fff;
-    padding: 20px 50px;
+  background-color: #111;
+  color: #fff;
+  padding: 20px 50px;
 }
 
 .navTop {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    background-color: #808080;
-    padding: 10px 20px;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #808080;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .searchInput {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 .searchInput::placeholder {
-    color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 .limitedOffer {
-    font-size: 20px;
-    border-bottom: 2px solid #008000;
-    cursor: pointer;
+  font-size: 20px;
+  border-bottom: 2px solid #008000;
+  cursor: pointer;
 }
 
 .navBottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menuItem {
-    margin-right: 50px;
-    cursor: pointer;
-    color: #808080;
-    font-weight: 800;
+  margin-right: 50px;
+  cursor: pointer;
+  color: #808080;
+  font-weight: 800;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuItem:hover {
+  color: #d3d3d3;
 }
 
 .slider {
-    background-image: url("https://images.tcdn.com.br/img/img_prod/486371/papel_de_parede_vinilico_colecao_neonature_5_tijolo_cidades_cinza_escuro_10745_1_20191103175259.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);*/
+  background-image: url("https://images.tcdn.com.br/img/img_prod/486371/papel_de_parede_vinilico_colecao_neonature_5_tijolo_cidades_cinza_escuro_10745_1_20191103175259.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
 }
 
 .sliderWrapper {
-    display: flex;
-    width: 500vw;
+  display: flex;
+  width: 500vw;
+  transition: all 1.5s ease-in-out;
 }
 
 .sliderItem {
-    width: 100VW;
-    display: flex;
-    align-items: center;
-    position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.sliderBg {
-    width: 750px;
-    height: 750px;
-    border-radius: 50%;
-    position: absolute;
+.slideBg {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
 }
 
-.sliderImg {
-    z-index: 1;
+.slideImg {
+  z-index: 1;
 }
 
 .sliderTitle {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    font-size: 60px;
-    font-weight: 300;
-    text-align: center;
-    color: #fff ;
-    z-index: 1;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
 }
 
 .sliderPrice {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 60px;
-    font-weight: 300;
-    text-align: center;
-    color: #fff ;
-    border: 1px solid #808080;
-    z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #808080;
+  z-index: 1;
 }
 
 .buyButton {
-        position: absolute;
-        top: 50%;
-        right: 10%;
-        font-size: 30px;
-        font-weight: 900;
-        color: #fff ;
-        border: 1px solid #808080;
-        background-color: #111;
-        z-index: 1;
-        cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  border: 1px solid #808080;
+  background-color: #111;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .buyButton:hover {
-    background-color: #fff;
-    color: #111;
+  background-color: #fff;
+  color: #111;
 }
 
-.sliderItem:nth-child(2) .sliderBg{
-    background-color: #369e62;
+.sliderItem:nth-child(1) .slideBg {
+  background-color: #369e62;
+}
+
+.sliderItem:nth-child(2) .slideBg {
+  background-color: #663399;
+}
+
+.sliderItem:nth-child(3) .slideBg {
+  background-color: #008080;
+}
+
+.sliderItem:nth-child(4) .slideBg {
+  background-color: #6495ed;
+}
+
+.sliderItem:nth-child(5) .slideBg {
+  background-color: rgb(124, 115, 80);
+}
+
+.sliderItem:nth-child(1) .sliderPrice {
+  color: #369e62;
+}
+
+.sliderItem:nth-child(2) .sliderPrice {
+  color: #fff;
+}
+
+.sliderItem:nth-child(3) .sliderPrice {
+  color: #008080;
+}
+
+.sliderItem:nth-child(4) .sliderPrice {
+  color: #6495ed;
+}
+
+.sliderItem:nth-child(5) .sliderPrice {
+  color: rgb(124, 115, 80);
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.featureDesc {
+  color: #808080;
+  width: 50%;
+  height: 100px;
+}
+
+.product {
+  height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.payment {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 87);
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 87);
+}
+
+.payTitle {
+  font-size: 20px;
+  color: #d3d3d3;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.payInput {
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid #808080;
+}
+
+.payInput::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.cardIcons {
+  display: flex;
+}
+
+.cardIcon {
+  margin-right: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sm {
+  width: 25%;
+}
+
+.payButton {
+  position: absolute;
+  height: 40px;
+  bottom: -40px;
+  width: 100%;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 87);
+  box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 87);
+  background-color: #369e62;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #808080;
+  color: #ffffff;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.productImg {
+  width: 50%;
+}
+
+.productDetails {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 40%;
+  padding: 50px;
+}
+
+.productTitle {
+  font-size: 75px;
+  font-weight: 900;
+}
+
+.productDesc {
+  font-style: 24px;
+  color: #808080;
+}
+
+.colors,
+.sizes {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #111;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color:last-child {
+  background-color: #00008b;
+}
+
+.size {
+  padding: 5px 20px;
+  border: 1px solid #111;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.productButton {
+  float: right;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.productButton:hover {
+  background-color: #fff;
+  color: #111;
 }
